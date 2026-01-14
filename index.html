@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind all states</title>
+    <!--cdn tailwind -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-green-300">
+     
+    <!-- tailwind all states -->
+     
+    <!-- hover  -->
+     <h1 class="text-3xl mt-4">1:Hover State:</h1>
+     <button class="bg-blue-500 hover:bg-blue-700 cursor-pointer px-5 py-2 text-center text-white rounded mt-5 ml-5">Hover me</button>
+     
+     <h1 class="text-3xl mt-4">2:Focus State:</h1>
+     
+     <input type="text" class="border focus:bg-yellow-400 mt-5 ml-5 py-1 px-4 rounded">
+     
+     <h1 class="text-3xl mt-4">3:Active State:</h1>
+     <button class="bg-green-400 active:bg-green-700 rounded text-white py-2 px-4 mt-5 ml-5 cursor-pointer hover:bg-green-600">Active State:</button>
+    </body>
+    <h1 class="text-3xl mt-4">4:Visted State:</h1>
+    <a href="#" class="text-blue-600 visited:text-yellow-600 mt-5 ml-5">Link</a>
+    
+    <h1 class="text-3xl mt-4">5:Disable State:</h1>
+    <button disabled class="bg-gray-400 text-white px-4 py-2 rounded disabled:opacity-40 mt-5 ml-5">
+        Disabled Button
+    </button>
+    
+    <h1 class="text-3xl mt-4">6:Checked State:</h1>
+    <input type="checkbox" class="checked:bg-blue-600 checked:border-blue-900 mt-6 ml-6">
+    
+    <h1 class="text-3xl mt-4">7:Focus visible State:</h1>
+    <button class="focus-visible:ring-4 focus-visible:ring-yellow-400 px-4 py-2">
+        Focus Visible
+    </button>
+    
+    <h1 class="text-3xl mt-4">8:Focus-with-in State:</h1>
+    
+    <div class="border p-3 focus-within:border-blue-500 rounded">
+        <input class="outline-none" placeholder="Focus child input" />
+    </div>
+    
+    <h1 class="text-3xl mt-4">9:Read-only State:</h1>
+    
+    <input readonly class="border bg-gray-200 read-only:cursor-not-allowed p-2 mt-5 ml-5 rounded">
+    
+    <h1 class="text-3xl mt-4">10:required State:</h1>
+    <form action="">
+        <input required class="border required p-2 rounded mt-5 ml-5"><br/>
+        <button class="text-white bg-blue-500 py-2 px-4 rounded mt-5 ml-5  cursor-pointer">Click me</button>
+    </form>
+    
+    <h1 class="text-3xl mt-4">11:Invalid State:</h1>
+    <form action="">
+        <input class="border p-2 invalid:border-red-500 mt-5 ml-5" type="email"><br/>
+        <button class="text-white bg-blue-500 py-2 px-4 rounded mt-5 ml-5  cursor-pointer">Click me</button>
+    </form>
+    
+    <h1 class="text-3xl mt-4">12:group hover State:</h1>
+    <div class=" bg-gray-200 p-4 hover:bg-gray-300">
+        <p class="hover:text-blue-600">Group Hover Text</p>
+    </div>
+    
+    <h1 class="text-3xl mt-4">13: placeholder State:</h1>
+    <input type="text" class="mt-5 ml-5 rounded py-2 px-5 focus:bg-blue-500 border rounded focus:text-white" placeholder="Enter your name">
+
+
+    <!-- responsive Design -->
+       <div class="bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-yellow-500">
+  Responsive Box
+</div>
+
+<div class="flex flex-col md:flex-row">
+  <div class="p-4 bg-red-200">Box 1</div>
+  <div class="p-4 bg-blue-200">Box 2</div>
+</div>
+
+
+<div class="bg-[#000] py-4 px-5 mb-5">
+  <p class="text-[#fff]">How Are you yes i am fine</p>
+</div>
+
+<div class="bg-[lch(70%_50_120)] text-white p-4">
+  LCH Background
+</div>
+
+
+<h1>this is preflight </h1>
+
+
+</html>
